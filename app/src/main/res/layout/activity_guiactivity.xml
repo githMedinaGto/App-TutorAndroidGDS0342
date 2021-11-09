@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2FF80"
+    tools:context=".GUIActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Elementos Gráficos de usuario"
+        android:textAlignment="center"
+        android:textColor="#002AFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="a. Activities"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView"
+                app:layout_constraintVertical_bias="1.0"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Qué es una Activity
+Una Activity en Android se corresponde con una pantalla de nuestra App. En
+realidad es un punto de entrada que Android puede cargar en cualquier momento.
+Se compone de:\n \n
+• Una clase, que normalmente extiende de AppCompatActivity. Es donde
+definimos el código de lo que queremos que haga la App.\n
+• Un layout, que identifica la apariencia de la vista, el diseño. Tiene formato
+XML, pero se puede utilizar el diseñador para hacerlo más sencillo\n
+• Una definición de su uso, que se realiza en el AndroidManifest.
+ciclo de vida de una Activity\n \n
+Es una serie de pasos por las que va pasando la pantalla en función del estado en
+el que se encuentra:\n\n
+• onCreate(): es el primero paso, lo primero que se llama nada más crearse
+la Activity\n
+• onStart(): cuando la activity se inicia. Se llama siempre que se llama
+a onCreate(), pero no al revés. onStart() se puede llamar cuando la activity
+pasa a un segundo plano y vuelve a estar visible\n
+• onResume(): cuando la activity se reanuda. Se llama siempre que se llama
+a onStart(), pero no al revés. onResume() se puede llamar cuando algo se
+pone por encima de nuestra activity (por ejemplo un diálogo), pero la activity
+se sigue viendo. Al recuperar el control, se llama a onResume()\n
+• onPause(): el opuesto de onResume(). Se llama cuando algo se pone por
+encima de la activity, pero esta se sigue viendo.\n
+• onStop(): el opuesto de onStart(). Se llama cuando la App se va a segundo
+plano, o se lanza otra activity por encima.\n
+• onDestroy(): el opuesto de onCreate(). Se llama cuando la Activity se
+destruye. Es lo último que se llamará antes de que la activity desaparezca.\n"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.056" />
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="b. TextView"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="TextView En Android\n
+El TextView En Android es un widget que muestra texto al usuario como su
+nombre lo sugiere. Claramente esto lo hace ser uno de los views más usados en
+interfaces de usuario para proyectar cabeceras, títulos, texto informativo, etiquetas
+y muchos otros.\n
+La Clase TextView\n
+TextView es una de las directas descendientes de la clase View. Al ser la
+abstracción responsable de contener texto, varios de los elementos gráficos del
+paquete android.widget, como Button y EditText, reutilizan esta naturaleza.
+Añadir Un TextView En Android Studio
+Para agregar un TextView desde el editor de layout de Android Studio tan, solo
+dirígete a Palette > Text o Palette > Common. Selecciona la opción TextView y
+arrástralo al lienzo.\n
+Color Del Texto\n
+Cambia el color del texto a través del atributo android:textColor. Este recibe la
+referencia a un recurso de color o valores RGB en
+variaciones 'rgb', 'argb', 'rrggbb', o 'aarrggbb'.\n
+Tamaño Del Texto\n
+El atributo android:textSize determina el tamaño del texto y se recomienda
+asignarle valores en pixeles escalados o sp. Sin embargo puedes usar medidas en
+px, dp, in y mm.\n
+Estilo Del Texto\n
+Asigna uno de los siguientes estilos o combinaciones de ellos: normal, bold y italic.
+El valor por defecto es normal y si deseas combinarlos usa el símbolo '|'n
+Tipo De Fuente\n
+El atributo android:typeface acepta las siguientes constantes para especificar el
+estilo de fuente del TextView: normal, sans,serif y monospace\n
+Convertir URLs En Links Clickeables\n
+Si deseas habilitar la detección de patrones que coincidan con esquemas como:
+correos, urls, teléfonos, entre otros; entonces, aplica el atributo android:autoLink.
+Los siguientes son los valores que puedes asignar:\n\n
+▪ all: Todos los patrones\n
+▪ email: Direcciones de correo\n
+▪ none: Ninguno (por defecto)\n
+▪ phone: Teléfonos\n
+▪ web: URLs web\n
+Convertir Texto A Mayúsculas\n
+En el caso que desees convertir toda la entrada de texto a mayúsculas,
+aplica true al atributo android:textAllCaps\n
+Familia Tipográfica\n
+Define el tipo que será usado de una fuente declarada en el sistema o en tus
+recursos de fuente (res/font)\n"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="c. Button"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Botones\n
+Un botón consiste en un texto o un ícono (o ambos) que comunica la acción que
+ocurrirá cuando el usuario lo toque.\n"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/boton"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="En función de si deseas un botón con texto, un ícono o ambos, puedes crear el
+botón en tu diseño de tres maneras:\n
+• Con texto, usando la clase Button:\n
+Button\n
+android:layout_width='wrap_content'\n
+android:layout_height='wrap_content'\n
+android:text='@string/button_text'\n
+            ... />\n
+            • Con un ícono, usando la clase ImageButton:\n
+            ImageButton\n
+                android:layout_width='wrap_content'\n
+                android:layout_height='wrap_content'\n
+                android:src='@drawable/button_icon'\n
+                android:contentDescription='@string/button_icon_desc'\n
+            ... />\n
+            • Con texto y un ícono, usando la clase Button y el\n
+            atributo android:drawableLeft:\n
+            Button\n
+                android:layout_width='wrap_content'\n
+                android:layout_height='wrap_content'\n
+                android:text='@string/button_text'\n
+                android:drawableLeft='@drawable/button_icon'\n
+            ... />\n
+            Las clases clave son las siguientes:\n\n
+            • Button\n
+            • ImageButton\n
+            Cómo responder a eventos de clic\n
+            Cuando el usuario hace clic en un botón, el objeto Button recibe un evento de clic.
+            Para definir el controlador de evento de clic de un botón, agrega el
+            atributo android:onClick al elemento Button en tu diseño XML. El valor de este
+            atributo debe ser el nombre del método al que deseas llamar en respuesta a un
+            evento de clic. La Activity que aloja el diseño debe implementar el método
+            correspondiente.\n
+            Por ejemplo, a continuación se muestra un diseño con un botón que
+            usa android:onClick:\n
+            ?xml version='1.0' encoding='utf-8'?>\n
+            Button xmlns:android='http://schemas.android.com/apk/res/android'\n
+                android:id='@+id/button_send'\n
+                android:layout_width='wrap_content'\n
+                android:layout_height='wrap_content'\n
+                android:text='@string/button_send'\n
+                android:onClick='sendMessage' />'\n"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="d. EditText"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.0" />"
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="EditText En Android
+Un EditText es un TextView cuya apariencia ha sido modificada para actuar como
+campo de texto, donde el usuario puede editar su contenido para especificar datos
+en una aplicación Android.\n
+La Clase EditText En Android\n
+Cómo decía al inicio, un EditText es la expansión de un TextView con la capacidad
+de editar su contenido para recibir texto por parte del usuario. Visualmente estos
+proyectan una línea inferior del color del acento del tema y un texto auxiliar
+llamado hint que representa el contenido asociado al view.\n
+Para incluir este view en un layout usa la etiqueta EditText>.\n
+Por ejemplo…\n
+Abre el archivo actividad_principal.xml y agrega el siguiente código:\n\n
+?xml version='1.0' encoding='utf-8'?>\n
+            RelativeLayout xmlns:android='http://schemas.android.com/apk/res/android'\n
+                xmlns:tools='http://schemas.android.com/tools'\n
+                android:layout_width='match_parent'\n
+                android:layout_height='match_parent'\n
+                android:paddingBottom='@dimen/activity_vertical_margin'\n
+                android:paddingLeft='@dimen/activity_horizontal_margin'\n
+                android:paddingRight='@dimen/activity_horizontal_margin'\n
+                android:paddingTop='@dimen/activity_vertical_margin'\n
+                tools:context='com.herprogramacion.camposdetexto.ActividadPrincipal'>\n
+                EditText\n
+                    android:id='@+id/campo_texto'\n
+                    android:layout_width='match_parent'\n
+                    android:layout_height='wrap_content'\n
+                    android:layout_centerHorizontal='true'\n
+                    android:layout_centerVertical='true'\n
+                    android:hint='Texto de entrada' />\n
+            /RelativeLayout>\n
+            Obtener Texto Del EditText\n
+            Para retornar el valor de texto de un EditText usa el método getText().
+            Este no retorna directamente un objeto String, si no Editable. La cual es una
+            interfaz de texto dinámico y configurable. Sin embargo al usar toString() es posible
+            obtener la cadena plana.\n
+            Modifica el layout para que el botón aparezca por debajo del EditText.
+            Luego asigna un manejador de clicks al botón con el atributo onClick. El nombre
+            del manejador será verValor.
+            actividad_principal.xml\n
+            ?xml version='1.0' encoding='utf-8'?>\n
+            RelativeLayout xmlns:android='http://schemas.android.com/apk/res/android'\n
+                xmlns:tools='http://schemas.android.com/tools'\n
+                android:layout_width='match_parent'\n
+                android:layout_height='match_parent'\n
+                android:paddingBottom='@dimen/activity_vertical_margin'\n
+                android:paddingLeft='@dimen/activity_horizontal_margin'\n
+                android:paddingRight='@dimen/activity_horizontal_margin'\n
+                android:paddingTop='@dimen/activity_vertical_margin'\n
+                tools:context='com.herprogramacion.camposdetexto.ActividadPrincipal'>\n
+                EditText\n
+                    android:id='@+id/campo_texto'\n
+                    android:layout_width='match_parent'\n
+                    android:layout_height='wrap_content'\n
+                    android:layout_centerHorizontal='true'\n
+                    android:layout_centerVertical='true'\n
+                    android:hint='Teléfono'\n
+                    android:inputType='phone'/>\n
+                Button\n
+                    android:id='@+id/boton'\n
+                    android:layout_width='wrap_content'\n
+                    android:layout_height='wrap_content'\n
+                    android:layout_below='@+id/campo_texto'\n
+                    android:layout_centerHorizontal='true'\n
+                    android:onClick='verValor'\n
+                    android:text='Guardar'/>\n
+            /RelativeLayout>\n
+            2. Abre ActividadPrincipal.java para definir el método verValor(). Dentro de este
+            obtén la instancia del view con la referencia R.id.campo_texto y loguea el
+            resultado de getText().\n\n
+            import android.os.Bundle;\n
+            import android.support.v7.app.AppCompatActivity;\n
+            import android.util.Log;\n
+            import android.view.View;\n
+            import android.widget.EditText;\n
+            public class ActividadPrincipal extends AppCompatActivity {\n
+            @Override\n
+            protected void onCreate(Bundle savedInstanceState) {\n
+            super.onCreate(savedInstanceState);\n
+            setContentView(R.layout.actividad_principal);\n
+            }\n
+            public void verValor(View v){\n
+            EditText campoTexto = (EditText) findViewById(R.id.campo_texto);\n
+            Log.d('Valor ET', campoTexto.getText().toString());\n
+            }\n
+            }\n\n
+            3. Ejecuta la app y presiona el botón luego de escribir algún número.
+            Tipos de Entrada en un Campo de Texto.\n
+            El atributo android:inputType condiciona la entrada de texto al usuario para
+            ingresar caracteres acordes al requerimiento del EditText.
+            Si tu campo de texto es para un número telefónico usa el valor phone.\n\n
+            EditText\n
+                android:id='@+id/campo_texto'\n
+                android:layout_width='match_parent'\n
+                android:inputType='phone'\n
+                android:layout_height='wrap_content'\n
+                android:layout_centerHorizontal='true'\n
+                android:layout_centerVertical='true'\n
+                android:hint='Teléfono'/>\n\n
+            Si ejecutas la app verás cómo el teclado se reduce a un keyboard tipo teléfono
+            Hay una inmensa cantidad de valores para inputType, sin embargo te dejo una
+            tabla con los de uso frecuente:\n\n
+            Constante Descripción\n
+            text Recibe texto plano simple\n
+            textPersonName Texto correspondiente al nombre de una persona
+            textPassword Protege los caracteres que se van escribiendo con puntos
+            numberPassword Contraseña de solo números enmascarada con puntos
+            textEmailAddress Texto que será usado en un campo para emails
+            phone Texto asociado a un número de teléfono
+            textPostalAddress Para ingresar textos asociados a una dirección postal
+            textMultiLine Permite múltiples líneas en el campo de texto\n
+            time Texto para determinar la hora\n
+            date Texto para determinar la fecha\n
+            number Texto con caracteres numéricos\n
+            numberSigned Permite números con signo\n
+            numberDecimal Para ingresar números decimales\n"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="e. Layout"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Que son los Layouts en Android Studio\n
+Son un conjunto de contenedores en donde podemos colocar muchos elementos
+según el diseño de nuestra aplicación, por ejemplo dentro de un Layout puedes
+colocar, botones, imágenes, formularios, textos, etc. todos estos deben tener un
+orden y armonía entre si dentro del diseño, para esto debemos haber elegido un
+Layout primero para luego colocar dentro de este los elementos que necesitemos.\n\n
+i. ConstraintLayout \n\n
+Constraint Layout\n
+Fue lanzado en Android Studio 2 junto con el Layout Editor y nos permite trabajar
+sin grupos de vistas anidadas similar a Relative Layout, este Layout nos ayuda
+mucho a diseñar interfaces de nuestra aplicación sin tener que depender de
+muchos Layouts como Linear, Frame, Table o Grid Layout.\n
+Este Layout es útil para trabajar con Grandes grupos de elementos porque nos
+crea un orden jerárquico dinámico, podemos agregar elementos adicionales y
+darles restricciones para que cuando muevas la posición de la pantalla del móvil,
+este mantenga en su lugar los elementos de una vista, a continuación giramos la
+pantalla de Portrait (Vista Normal) a Landscape (Vista de Costado)\n\n
+ii. LinearLayout\n\n
+Linear Layout\n
+Se utiliza para alinear uno o varios elementos de tu diseño de forma vertical o
+horizontal, la orientación lo definimos con el atributo
+android:orientation=”horizontal” este tipo de Layout los podemos aplicar a los
+elementos que deben de centrarse en su totalidad, por ejemplo un formulario de
+contacto o una imagen con un botón, una orientación general a todos los
+elementos de tu vista\n\n
+Frame Layout\n
+Este Layout alinea todos los elementos de tu diseño (botones, Image View, etc.) al
+lado izquierdo, podemos aplicar margenes para mostrar un elemento en un punto
+especifico de la pantalla, puedes agregar varios elementos a tu diseño pero
+mantiendo el orden de los elementos par que tu diseño se vea agradable"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="f. ImageView"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="El control ImageView permite mostrar imágenes en la aplicación. La propiedad
+más interesante es android:src, que permite indicar la imagen a mostrar.
+Nuevamente, lo normal será indicar como origen de la imagen el identificador de
+un recurso de nuestra carpeta /res/drawable, por
+ejemplo android:src='@drawable/unaimagen'. Además de esta propiedad, existen
+            algunas otras útiles en algunas ocasiones como las destinadas a establecer el
+            tamaño máximo que puede ocupar la
+            imagen, android:maxWidth y android:maxHeight, o para indicar cómo debe
+            adaptarse la imagen al tamaño del control, android:scaleType (CENTER,
+            CENTER_CROP, CENTER_INSIDE, …). Además, como ya comentamos para el
+            caso de los controles ImageButton, al tratarse de un control de tipo imagen
+            deberíamos establecer siempre la propiedad android:contentDescription para
+            ofrecer una breve descripción textual de la imagen, algo que hará nuestra
+            aplicación mucho más accesible.\n
+            ImageView android:id='@+id/imgLogo'\n
+                android:layout_width='wrap_content'\n
+                android:layout_height='wrap_content'\n
+                android:scaleType='centerInside'\n
+                android:src='@drawable/logoandroid'\n
+                android:contentDescription='logo de android'/>\n\n
+            Si en vez de establecer la imagen a mostrar en el propio layout XML de la
+            actividad quisiéramos establecerla mediante código utilizaríamos el
+            método setImageResorce(…), pasándole el ID del recurso a utilizar como
+            contenido de la imagen.\n
+            //Establecer la imagen por código\n
+            imgLogo = findViewById(R.id.imgLogo)\n
+            imgLogo.setImageResource(R.drawable.logoandroid"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf='@+id/btn_regresa_principal2'
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="g. WebView"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="La clase WebView es una extensión de la clase View de Android que te permite
+mostrar páginas web como parte del diseño de tu actividad. No incluye las
+funciones de un navegador web completamente desarrollado, como controles de
+navegación o una barra de direcciones. De forma predeterminada, todo lo que
+hace WebView es mostrar una página web.\n
+Para agregar una WebView a tu app en el diseño, incluye el siguiente código en el
+archivo XML del diseño de la actividad:\n\n
+            WebView\n
+            android:id='@+id/webview'\n
+            android:layout_width='match_parent'\n
+            android:layout_height='match_parent'\n/>
+            Para cargar una página web en la WebView, usa loadUrl(). Por ejemplo:\n
+            KotlinJava\n\n
+            val myWebView: WebView = findViewById(R.id.webview)\n
+            myWebView.loadUrl('http://www.example.com')\n
+            Cómo agregar una WebView en onCreate()\n\n
+            Para agregar una WebView a tu app en el método onCreate() de una actividad,
+            utiliza una lógica similar a la siguiente:\n\n
+            KotlinJava\n\n
+            val myWebView = WebView(activityContext)\n
+            setContentView(myWebView)\n"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="h. Menus"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Los menús son un componente común de la interfaz de usuario en muchos tipos
+de aplicaciones. Para proporcionar una experiencia de usuario conocida y
+uniforme, debes usar las API de Menu a fin de presentar al usuario acciones y
+otras opciones en las actividades.\n\n
+Cómo definir un menú en XML\n
+Para todos los tipos de menús, Android proporciona un formato XML estándar que
+permite definir los elementos de menú. En lugar de incorporar un menú en el
+código de la actividad, debes definir un menú y todos los elementos en un recurso
+de menú XML. Luego, puedes aumentar el recurso de menú (cargarlo como un
+objeto Menu) en la actividad o el fragmento.\n
+Para definir el menú, crea un archivo en formato XML dentro del
+directorio res/menu/ del proyecto y desarrolla el menú con los siguientes
+elementos:\n\n
+menu>\n
+Define un Menu, que es un contenedor para elementos de menú. Un
+elemento menu> debe ser el nodo raíz del archivo y puede tener uno o
+más elementos item> y group>.\n
+item>\n
+Crea un MenuItem, que representa un único elemento en un menú. Este
+elemento puede contener un elemento menu> anidado para crear un
+submenú.\n
+group>\n
+Es un contenedor opcional e invisible para elementos item>. Te permite
+categorizar los elementos de menú para que compartan propiedades, como
+el estado de la actividad y la visibilidad. Para obtener más información,
+consulta la sección Cómo crear grupos del menú.\n
+Aquí presentamos un menú de ejemplo denominado game_menu.xml:\n\n
+?xml version='1.0' encoding='utf-8'?>\n
+            menu xmlns:android='http://schemas.android.com/apk/res/android'>\n
+                item android:id='@+id/new_game'\n
+                    android:icon='@drawable/ic_new_game'\n
+                    android:title='@string/new_game'\n
+                    android:showAsAction='ifRoom'/>\n
+                item android:id='@+id/help'\n
+                    android:icon='@drawable/ic_help'\n
+                    android:title='@string/help '/>\n
+            /menu>\n\n
+            El elemento item> admite varios atributos que puedes usar para definir la
+            apariencia y el comportamiento de un elemento. Los elementos del menú
+            precedente incluyen estos atributos:\n\n
+            android:id\n
+            Es el ID de un recurso que es exclusivo del elemento y permite que la
+            aplicación lo reconozca cuando el usuario lo selecciona.\n
+            android:icon\n
+            Es la referencia a un elemento de diseño para usar como el ícono del
+            elemento.\n
+            android:title\n
+            Es la referencia a una string para usar como el título del elemento.
+            android:showAsAction\n
+            Especifica cuándo y cómo el elemento debe aparecer como un elemento de
+            acción en la barra de la app.\n
+            Estos son los atributos más importantes que debes usar, pero hay muchos más
+            disponibles. Para obtener información sobre todos los atributos admitidos, consulta
+            el documento Recurso de menú."
+                android:textSize="19dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_regresa_principal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="regresaPrincipal"
+        android:text="Ir principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <!--<RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="365dp"
+        android:layout_height="532dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbtn_activities"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onRadioButtonSelect"
+            android:text="Activities"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <RadioButton
+            android:id="@+id/rbtn_textview"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onRadioButtonSelect"
+            android:text="TextView"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+        <RadioButton
+            android:id="@+id/rbtn_button"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onRadioButtonSelect"
+            android:text="Button"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+        <RadioButton
+            android:id="@+id/rbtn_edittext"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onRadioButtonSelect"
+            android:text="EditText"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+        <RadioButton
+            android:id="@+id/rbtn_layout"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onRadioButtonSelect"
+            android:text="Layout"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
+
+        <RadioButton
+            android:id="@+id/rbtn_imageview"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onRadioButtonSelect"
+            android:text="ImageView"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton4" />
+
+        <RadioButton
+            android:id="@+id/rbtn_webview"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onRadioButtonSelect"
+            android:text="WebView"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton6" />
+
+        <RadioButton
+            android:id="@+id/rbtn_menus"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onRadioButtonSelect"
+            android:text="Menus"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton7" />
+    </RadioGroup>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

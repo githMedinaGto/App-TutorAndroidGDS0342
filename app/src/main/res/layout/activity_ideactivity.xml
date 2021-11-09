@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2FF80"
+    tools:context=".IDEActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Entorno de Desarrollo Integrado (IDE) sugeridos para la implementación de Apps"
+        android:textAlignment="center"
+        android:textColor="#40455E"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="399dp"
+        android:layout_height="534dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Que es Android?"
+                android:textColor="@color/purple_700"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android es un sistema operativo móvil diseñado para dispositivos móviles con
+pantalla táctil como teléfonos inteligentes o tablets, pero que también lo encontramos
+en otros dispositivos como relojes inteligentes, televisores o incluso en los sistemas
+multimedia de algunos modelos de coches. Un sistema operativo desarrollado por
+Google y basado en el Kernel de Linux y otros softwares de código abierto y que se
+ha convertido en el principal responsable de la popularización de muchos
+dispositivos inteligentes por el hecho de facilitar el uso de una gran cantidad de
+aplicaciones de forma sencilla.\n \n
+La empresa que permitió el nacimiento de Android llevaba su propio nombre,
+Android Inc, fundada en el año 2003 por Andry Rubin, Rich Miner, Nick Sears y Chris
+White. Ellos fueron los que anunciaron Android como un sistema operativo orientado
+inicialmente para las cámaras digitales y que permitía conectarlas con el PC sin la
+necesidad de cables."
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eclipse"
+                android:textColor="#200363"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:src="@drawable/eclipse" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eclipse es un entorno de desarrollo, de código abierto y gratuito, cuyo diseño
+sigue un patrón de actualización basado en plugins. Su objetivo es convertirse en
+una plataforma de integración de herramientas de desarrollo. Es un IDE que
+podríamos denominar genérico, ya que no fue concebido para ser utilizado con un
+solo lenguaje de programación, sino que es compatible con una gran variedad de
+lenguajes."
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NetBeans"
+                android:textColor="#200363"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:src="@drawable/netbeans" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NetBeans es un IDE que nos permite de forma rápida y fácil desarrollar
+aplicaciones Java de escritorio, móviles y aplicaciones web, utilizando tecnologías
+y lenguajes como HTML5 con HTML, Javascript y CSS. Proporciona un conjunto
+de herramientas para PHP, C y C++.\n\n
+Entre sus puntos fuertes al igual que Eclipse es que ambos son de código abierto
+y gratuitos y cuenta como añadido con una gran base de usuarios que forman
+parte de una comunidad de desarrolladores muy amplia en todo el mundo. Cabe
+destacar que se construye siguiendo la misma filosofía que Eclipse, ambos
+poseen una estructura modular para aumentar y configurar el entorno
+dependiendo de nuestras necesidades como desarrolladores.
+"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Studio"
+                android:textColor="#200363"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:src="@drawable/androidstudio" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Studio es el entorno de desarrollo integrado (IDE) oficial para el desarrollo
+de apps para Android y está basado en IntelliJ IDEA. Además del potente editor de
+códigos y las herramientas para desarrolladores de IntelliJ, Android Studio ofrece
+incluso más funciones que aumentan tu productividad cuando desarrollas apps
+para Android, como las siguientes:\n\n
+• Un sistema de compilación flexible basado en Gradle
+• Un emulador rápido y cargado de funciones\n
+• Un entorno unificado donde puedes desarrollar para todos los dispositivos
+Android \n
+• Aplicación de cambios para insertar cambios de código y recursos a la app
+en ejecución sin reiniciarla\n
+• Integración con GitHub y plantillas de código para ayudarte a compilar
+funciones de apps comunes y también importar código de muestra\n
+• Variedad de marcos de trabajo y herramientas de prueba\n
+• Herramientas de Lint para identificar problemas de rendimiento, usabilidad y
+compatibilidad de versiones, entre otros\n
+• Compatibilidad con C++ y NDK\n
+• Compatibilidad integrada con Google Cloud Platform, que facilita la
+integración con Google Cloud Messaging y App Engine."
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visual Studio"
+                android:textColor="#200363"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:src="@drawable/visualstudio" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visual Studio es un entorno de desarrollo integrado (IDE, por sus siglas en inglés)
+para Windows y macOS. Es compatible con múltiples lenguajes de programación,
+tales como C++, C#, Visual Basic .NET, F#, Java, Python, Ruby y PHP, al igual
+que entornos de desarrollo web, como ASP.NET MVC, Django, etc., a lo cual hay
+que sumarle las nuevas capacidades en línea bajo Windows Azure en forma del
+editor Monaco.\n
+Visual Studio permite a los desarrolladores crear sitios y aplicaciones web, así
+como servicios web en cualquier entorno compatible con la plataforma .NET (a
+partir de la versión .NET 2002). Así, se pueden crear aplicaciones que se
+comuniquen entre estaciones de trabajo, páginas web, dispositivos móviles,
+dispositivos embebidos y videoconsolas, entre otros."
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_regresa_principal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="regresaPrincipal"
+        android:text="Ir Principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

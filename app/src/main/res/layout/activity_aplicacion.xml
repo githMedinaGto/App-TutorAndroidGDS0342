@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2FF80"
+    tools:context=".AplicacionActivity">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tipos de aplicaciones:"
+        android:textColor="#0458FD"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="410dp"
+        android:layout_height="490dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/text_nativas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="redirect"
+                    android:text="a. Nativas:"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text_info_nativa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Las aplicaciones móviles nativas son las que se desarrollan específicamente para
+cada sistema operativo, iOS, Android o Windows Phone, adaptando a cada uno el
+lenguaje con el que se desarrolla: lenguaje Objective-C para iOS, Java para
+Android, y .Net para Windows Phone.
+Entre las ventajas de este tipo de aplicaciones destacan que aprovechan las
+funcionalidades del dispositivo y que pueden funcionar sin conexión a Internet."
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/text_no_nativas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="redirect"
+                    android:text="b. No nativas"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text_info_no_nativa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Las aplicaciones no nativas estan escritas en lenguajes de programación de alto
+nivel y no pueden acceder directamente a todas las funciones del sistema
+operativo y componentes de hardware patentados."
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/text_multiplataforma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="redirect"
+                    android:text="c. Multiplataforma"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text_info_multiplataforma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Las aplicaciones multiplataforma son apps que se caracterizan por ser creadas
+bajo un único lenguaje de programación que facilita su exportación y por tanto su
+visualización en cualquier tipo de dispositivo independientemente de su sistema
+operativo. Al ser desarrolladas con un mismo lenguaje, sólo son necesarios unos
+cambios mínimos para su completa adaptación a cualquier dispositivo, ya sea
+móvil, ordenador o tablet, entre otros."
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_regresa_principal"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:onClick="regresaPrincipal"
+        android:text="Ir principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
+        app:layout_constraintVertical_bias="0.409" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

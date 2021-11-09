@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:id="@+id/item_tipos"
+        android:title="@string/tipos"/>-->
+    <item
+        android:id="@+id/item_tipos"
+        android:title="@string/tipos">
+        <menu>
+            <item
+                android:id="@+id/item_nativas"
+                android:title="Aplicaiones Nativas"/>
+            <item
+                android:id="@+id/item_mo_nativa"
+                android:title="Aplicaiones no nativas"/>
+            <item
+                android:id="@+id/item_multiplataforma"
+                android:title="Aplicaciones multiplataforma"/>
+        </menu>
+    </item>
+    <item
+
+        android:id="@+id/item_conceptos"
+        android:title="@string/conceptos"/>
+    <item
+        android:id="@+id/item_ide"
+        android:title="@string/ide"/>
+    <item
+        android:id="@+id/item_mvc"
+        android:title="@string/mvc"/>
+    <item
+        android:id="@+id/item_gui"
+        android:title="@string/gui"/>
+    <item
+        android:id="@+id/item_dev"
+        android:title="@string/dev"/>
+</menu>

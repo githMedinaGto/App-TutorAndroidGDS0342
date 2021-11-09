@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2FF80"
+    tools:context=".VistaControladorActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Archivos de diseño XML"
+        android:textAlignment="center"
+        android:textColor="#40455E"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="407dp"
+        android:layout_height="471dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XML significa Lenguaje de etiquetas extensible. XML es un lenguaje de etiquetas
+muy parecido al HTML utilizado para describir datos. Las etiquetas XML no están
+predefinidas en XML. Debemos definir nuestras propias etiquetas. Xml ya que es
+bien legible tanto por humanos como por máquinas. Además, es escalable y
+simple de desarrollar. En Android usamos xml para diseñar nuestros diseños
+porque xml es un lenguaje liviano por lo que no hace que nuestro diseño sea
+pesado."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Conceptos básicos de la interfaz de usuario:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XML significa Lenguaje de etiquetas extensible. XML es un lenguaje de etiquetas
+muy parecido al HTML utilizado para describir datos. Las etiquetas XML no están
+predefinidas en XML. Debemos definir nuestras propias etiquetas. Xml ya que es
+bien legible tanto por humanos como por máquinas. Además, es escalable y
+simple de desarrollar. En Android usamos xml para diseñar nuestros diseños
+porque xml es un lenguaje liviano por lo que no hace que nuestro diseño sea
+pesado."
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El concepto completo de la interfaz de usuario de Android se define utilizando la
+jerarquía de los objetos View y ViewGroup. Un ViewGroup es un contenedor
+invisible que organiza vistas secundarias. Estas vistas secundarias son otros
+widgets que se utilizan para crear las diferentes partes de la IU. Un ViewGroup
+puede tener otro ViewGroup como elemento secundario
+En Android hay diferentes tipos de archivos xml utilizados para varios propósitos
+diferentes. A continuación definiremos todos y cada uno de ellos . \n \n
+1. Layout xml: Los archivos xml de diseño se utilizan para definir la interfaz de
+usuario real de nuestra aplicación. Contiene todos los elementos (vistas) o las
+herramientas que queremos usar en nuestra aplicación. Al igual que los TextView,
+los botones y otros elementos de la interfaz de usuario.\n
+2. Manifest xml: Este archivo xml se usa para definir todos los componentes de
+nuestra aplicación. Incluye los nombres de nuestros paquetes de la app, nuestros
+Activitys, receptores, servicios y los permisos que nuestra aplicación necesita. Por
+ejemplo: supongamos que necesitamos usar la cámara de nuestro dispositivo,
+entonces necesitamos definir el permiso del uso de la cámara en nuestro Manifest. \n
+3. Strings xml: Este archivo xml se usa para reemplazar las cadenas codificadas
+con una sola cadena. Definimos todas las cadenas en este archivo xml y luego
+accedemos a ellas desde nuestra aplicación desde este archivo. Este archivo nos
+permite mejorar la reutilización del código.\n
+4. Styles xml: Este xml se usa para definir diferentes estilos de la aplicación.
+Definimos nuestros temas y estilos personalizados en este archivo.\n
+5. Color xml: Este archivo se usa para definir los códigos de color que usamos en
+nuestra aplicación. Simplemente definimos los colores en este archivo y los
+usamos en nuestra aplicación, por ejemplo cambiar el fondo de nuestra app o
+darle el color que elijamos algún texto de nuestra aplicación.\n"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Clases de Java para el manejo de eventos"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="404dp"
+                android:layout_height="218dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints,WebViewLayout" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_regresa_principal"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:onClick="regresaPrincipal"
+        android:text="Ir principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2FF80"
+    android:orientation="vertical"
+    tools:context=".ConceptosActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/conceptos"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="399dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Que es Android?"
+                android:textColor="@color/purple_700"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android es un sistema operativo móvil diseñado para dispositivos móviles con
+pantalla táctil como teléfonos inteligentes o tablets, pero que también lo encontramos
+en otros dispositivos como relojes inteligentes, televisores o incluso en los sistemas
+multimedia de algunos modelos de coches. Un sistema operativo desarrollado por
+Google y basado en el Kernel de Linux y otros softwares de código abierto y que se
+ha convertido en el principal responsable de la popularización de muchos
+dispositivos inteligentes por el hecho de facilitar el uso de una gran cantidad de
+aplicaciones de forma sencilla.\n \n
+La empresa que permitió el nacimiento de Android llevaba su propio nombre,
+Android Inc, fundada en el año 2003 por Andry Rubin, Rich Miner, Nick Sears y Chris
+White. Ellos fueron los que anunciaron Android como un sistema operativo orientado
+inicialmente para las cámaras digitales y que permitía conectarlas con el PC sin la
+necesidad de cables."
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                tools:ignore="WebViewLayout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Versión Actual"
+                android:textColor="@color/purple_700"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="409dp"
+                android:layout_height="170dp"
+                android:src="@drawable/android11" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 11 es la undécima versión principal y la decimoctava versión del sistema
+operativo móvil Android. Fue lanzado el 8 de septiembre de 2020. Los nombres de
+lanzamiento alfabéticos basados en postres se descontinuaron a partir de Android
+10; por lo tanto, el sistema operativo fue inmediatamente calificado como 'Android 11'. El logotipo del lanzamiento presenta un dial girado a 11, una referencia a la
+            película de falso documental musical This Is Spinal Tap"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Breve semblanza"
+                android:textColor="#0707FB"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estas son sus principales novedades: \n\n
+• Mejoras en las notificaciones: Las notificaciones que sean de
+conversaciones en apps de mensajería ahora tienen un espacio
+dedicado y se pueden priorizar o gestionar directamente desde esta
+sección.\n
+• Controles en domótica: Desde el menú de apagado ahora se pueden
+controlar los dispositivos conectados por Google Home. Se encontrarán
+estos controles junto a las tarjetas de bancos y los botones de apagado,
+reinicio y emergencia.\n
+• Burbujas para las apps de mensajería Para no tener que volver siempre
+a una app de mensajería cuando alguien nos escribe, podemos
+mantener una especie de burbuja flotante con el icono de esa persona
+que estará presente durante todo el sistema operativo y no sólo en la
+app en concreto.\n
+• Permisos granulares para las apps: Especialmente enfocado en la
+privacidad. Las apps ahora pueden tener permiso una sola vez o sólo
+cuando se están utilizando para acceder a determinadas funciones
+como la ubicación.\n
+• Android Auto de forma inalámbrica: Desde Android 11, si el vehículo es
+compatible, se podrá utilizar Android Auto y vincularlo al teléfono sin
+tener que conectarlo por cable.\n
+• Grabación de pantalla: De forma oficial Android 11 ya permite la
+grabación de la pantalla. La funcionalidad se encuentra en los ajustes
+rápidos del sistema.\n
+• Actualizaciones mediante Google Play: Más módulos pasan a depender
+de Google directamente para poder actualizarlos sin esperar a que el
+fabricante lance la actualización. Esencial para las actualizaciones de seguridad.\n"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Lenguajes en los que se implementa las aplicaciones nativas"
+                android:textColor="@color/purple_700"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Java es uno de los lenguajes de programación más populares. Al ser un lenguaje
+multiplataforma, es muy sencillo crear aplicaciones para una determinada plataforma
+y, con unos pocos cambios (o con ninguno), hacerlo funcionar en otros sistemas
+operativos. El problema de este lenguaje es que funciona a través de la máquina.
+Kotlin es un lenguaje de programación inspirado en Java creado por Google para
+incitar a los usuarios a crear apps escritas en este lenguaje. Las ventajas de este es
+que es más sencillo que Java y ofrece un mejor rendimiento. Por desgracia, no es
+tan popular como esperaba Google. \n\n
+Swift es un lenguaje de programación igual de completo que Objetive-C pero más
+sencillo de aprender. Cada vez más aplicaciones se basan en este lenguaje de
+programación ya que, entre otras cosas, permite crear fácilmente todo tipo de apps
+(da igual su finalidad), y ofrece un rendimiento bastante superior al de aplicaciones
+creadas en Objetive-C (concretamente 2.6 veces superior) y Python (8.4 veces
+superior).\n\n
+Objetive-C es un lenguaje de programación bastante antiguo y complicado para
+aquellos que nunca antes han programado. Por ello, Apple creó otro lenguaje de
+programación universal para todos sus sistemas y dispositivos: Switft."
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lenguajes Nativos"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#a4c639"
+                android:textSize="22dp"
+                android:text="Android"
+                android:fontFamily="sans-serif-medium"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/java"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp"
+                android:text="Java"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Java es uno de los lenguajes de programación más populares de los últimos 15 años. Es un lenguaje multiplataforma, su sencillez y robustez a la hora de crear aplicaciones lo hacen uno de los lenguajes más potentes actualmente.  El gran problema que tiene java, si se le puede llamar problema, es que necesita de una máquina virtual para poder ser ejecutado con lo que puede llevar a problemas de rendimiento."/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/kotlin"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0088FF"
+                android:textSize="20dp"
+                android:text="Kotlin"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Kotlin es un lenguaje de programación realmente neófito, ya que su fecha data del 2017 que fue cuando Google anunció soporte para su Android Studio. Este lenguaje está inspirado en Java, y C++ por lo que se puede pensar que es una versión mejorada de estos lenguajes. Kotlin es un lenguaje muy limpio y relativamente simple con muchas menos formalidades y reglas como sería sus antecesores. Su popularidad ha ido creciendo y actualmente más del 50% de los desarrolladores profesionales de Android utilizan este lenguaje para sus aplicaciones.
+\nNo es de extrañar visto lo anterior, que Kotlin fue el lenguaje que más creció durante el 2018."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:text="iOS"
+                android:fontFamily="sans-serif-medium"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/swift"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FB8C00"
+                android:textSize="20dp"
+                android:text="Swift"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Es el lenguaje elegido por Apple para el desarrollo de sus aplicaciones en iOS, Mac Apple TV y Apple Watch. Este lenguaje fuertemente tipado, te permitirá tener menos errores durante el desarrollo, te facilitará el uso de patrones de programación funcional y, también, te ayudará a gestionar de forma automática la memoria."/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/oc"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="objective-c"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Objective-C es el lenguaje de programación nativo para los sistemas operativos OS X y iOS de Apple. Programación estructurada: Código espagueti. Smalltalk: Programación orientada a objetos y solución a muchos problemas."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:src="@drawable/android"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regresa_principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_regresa_principal"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:onClick="regresaPrincipal"
+        android:text="Ir principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PrincipalActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_tipo_apps"
+            android:src="@drawable/booking"
+            android:layout_width="205dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="175dp"
+            android:background="#A2FF80"
+            android:onClick="manejarOpcion"/>
+
+        <ImageButton
+            android:id="@+id/btn_conceptos"
+            android:layout_width="205dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="175dp"
+            android:background="#A2FF80"
+            android:onClick="manejarOpcion"
+            android:src="@drawable/conceptos" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Tipos de Apps"/>
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Conceptos"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageButton
+            android:id="@+id/btn_ide"
+            android:src="@drawable/desarrollo"
+            android:layout_marginEnd="8dp"
+            android:layout_width="205dp"
+            android:layout_height="175dp"
+            android:background="#A2FF80"
+            android:onClick="manejarOpcion"/>
+
+        <ImageButton
+            android:id="@+id/btn_mvc"
+            android:layout_width="205dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="175dp"
+            android:background="#A2FF80"
+            android:onClick="manejarOpcion"
+            android:src="@drawable/mvc" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Entorno de desarrollo"/>
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Modelo de vista contolador"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageButton
+            android:id="@+id/btn_gui"
+            android:src="@drawable/grafica"
+            android:layout_width="205dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="175dp"
+            android:background="#A2FF80"
+            android:onClick="manejarOpcion"/>
+
+        <ImageButton
+            android:id="@+id/btn_dev"
+            android:layout_width="205dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="175dp"
+            android:background="#A2FF80"
+            android:onClick="manejarOpcion"
+            android:src="@drawable/programador" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Elementos GUI"/>
+        <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Desarrollador"/>
+    </LinearLayout>
+
+</LinearLayout>
